@@ -1,0 +1,24 @@
+# Site settings
+title: Just a site
+name: Just a site
+email: disjfa@disjfa.nl
+description: >
+  Just a site, just an example how to create a website
+baseurl: "/happy-thoughts"
+url: "https://disjfa.github.io"
+github_url:  https://github.com/disjfa/just-a-site
+github_username:  disjfa
+bandcamp_url:  false
+facebook_url:  false
+twitter_url:  'https://twitter.com/disjfa'
+
+# Google
+google_analytics:
+
+# Build settings
+markdown: kramdown
+
+# deployment
+source: site
+host: 0.0.0.0
+port: 5000

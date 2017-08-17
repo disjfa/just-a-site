@@ -1,0 +1,31 @@
+{
+  "name": "happy-thoughts",
+  "version": "0.1.0",
+  "description": "Happy Thoughts website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "deploy": "gulp deploy"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "browser-sync": "^2.18.13",
+    "browserify": "^14.4.0",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "hella-hero": "^0.1.0",
+    "normalize-scss": "^7.0.0",
+    "ryoko-headers": "^0.1.2",
+    "vue": "^2.4.2"
+  },
+  "devDependencies": {
+    "gulp-gh-pages": "^0.5.4"
+  },
+  "browser": {
+    "vue": "vue/dist/vue.common.js"
+  }
+}

@@ -1,0 +1,21 @@
+$theme-colors: (
+        primary: #c0392b,
+        secondary: #95a5a6,
+        success: #27ae60,
+        info: #2980b9,
+        warning: #f1c40f,
+        danger: #e74c3c,
+        light: #ecf0f1,
+        dark: #7f8c8d
+);
+$enable-shadows: true;
+$font-size-base: 1.1rem;
+$font-size-lg: 1.3rem;
+$font-size-sm: 1rem;
+$navbar-padding-y: 1.2rem;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/font-awesome/scss/font-awesome.scss';
+@import '../node_modules/ryoko-headers/scss/ryoko.scss';
+@import '../node_modules/hella-hero/scss/index.scss';
+@import 'page';
