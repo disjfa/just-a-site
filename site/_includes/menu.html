@@ -1,17 +1,23 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
     <div class="container">
         <a class="navbar-brand" href="#top">
-            Just a site
+            <img src="{{ "/assets/icons/android-chrome-48x48.png" | prepend: site.baseurl }}" alt="{{ site.title }}">
         </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false"
+                aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link js-link" href="#artists">Artists</a>
-                </li>
+                {% for page in site.pages %}
+                    {% if page.title %}
+                        <li class="nav-item{% if page.url == page.url %} active{% endif %}">
+                            <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
             </ul>
             <div class="d-flex">
                 {% if site.bandcamp_url %}
