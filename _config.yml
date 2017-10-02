@@ -4,7 +4,7 @@ name: Just a site
 email: disjfa@disjfa.nl
 description: >
   Just a site, just an example how to create a website
-baseurl: "/happy-thoughts"
+baseurl: "/just-a-site"
 url: "https://disjfa.github.io"
 github_url:  https://github.com/disjfa/just-a-site
 github_username:  disjfa

@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const browserSync = require('browser-sync');
 const sass = require('gulp-sass');
 const child = require('child_process');
 const gutil = require('gulp-util');
@@ -9,12 +8,13 @@ const vueify = require('vueify');
 const source = require('vinyl-source-stream');
 const favicons = require('gulp-favicons');
 
-gulp.task('default', ['copy', 'scripts', 'styles', 'jekyll', 'browser-sync', 'watch'], () => {
+gulp.task('default', ['copy', 'scripts', 'styles', 'jekyll', 'watch'], () => {
 });
 
 gulp.task('watch', () => {
   gulp.watch('scss/**/*.scss', ['styles']);
   gulp.watch('js/**/*.js', ['scripts']);
+  gulp.watch('js/**/*.vue', ['scripts']);
 });
 
 gulp.task('copy', ['copy-fonts'], () => {
@@ -78,21 +78,11 @@ gulp.task('styles', () => {
 
 // Basic usage
 gulp.task('scripts', () => {
-  browserify('./js/happy-thoughts.js')
+  browserify('./js/just-a-site.js')
     .transform(vueify)
     .bundle()
-    .pipe(source('happy-thoughts.js'))
+    .pipe(source('just-a-site.js'))
     .pipe(gulp.dest('./site/js'));
-});
-
-gulp.task('browser-sync', () => {
-  browserSync.init(null, {
-    files: ['_site/**/*.*'],
-    port: 7000,
-    server: {
-      baseDir: '_site',
-    },
-  });
 });
 
 gulp.task('favicons', () => gulp.src('site/assets/icon.png').pipe(favicons({
