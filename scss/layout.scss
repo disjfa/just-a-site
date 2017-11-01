@@ -14,8 +14,8 @@ $font-size-lg: 1.3rem;
 $font-size-sm: 1rem;
 $navbar-padding-y: 1.2rem;
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import '../node_modules/font-awesome/scss/font-awesome.scss';
-@import '../node_modules/ryoko-headers/scss/ryoko.scss';
-@import '../node_modules/hella-hero/scss/index.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~font-awesome/scss/font-awesome.scss';
+@import '~ryoko-headers/scss/ryoko.scss';
+@import '~hella-hero/scss/index.scss';
 @import 'page';

@@ -1,9 +1,11 @@
 import Vue from 'vue';
+import SheetComponent from './sheet-component.vue';
+import TourComponent from './tour-component.vue';
 
 new Vue({
   el: '#vue-app',
   components: {
-    'tour-component': require('./tour-component.vue'),
-    'sheet-component': require('./sheet-component.vue'),
+    SheetComponent,
+    TourComponent,
   },
 });
