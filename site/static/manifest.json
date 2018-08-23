@@ -1,9 +1,14 @@
 {
-  "static/fonts/fontawesome-webfont.eot": "/static/fonts/fontawesome-webfont.674f50d2.eot",
-  "static/fonts/fontawesome-webfont.ttf": "/static/fonts/fontawesome-webfont.b06871f2.ttf",
-  "static/fonts/fontawesome-webfont.woff": "/static/fonts/fontawesome-webfont.fee66e71.woff",
-  "static/fonts/fontawesome-webfont.woff2": "/static/fonts/fontawesome-webfont.af7ae505.woff2",
-  "static/images/fontawesome-webfont.svg": "/static/images/fontawesome-webfont.912ec66d.svg",
-  "static/just-a-site.js": "/static/just-a-site.js",
-  "static/layout.css": "/static/layout.css"
+  "/just-a-site/just-a-site.js": "/just-a-site/static/just-a-site.js",
+  "/just-a-site/layout.css": "/just-a-site/static/layout.css",
+  "/just-a-site/images/fa-solid-900.svg": "/just-a-site/static/images/fa-solid-900.de1d242d.svg",
+  "/just-a-site/fonts/fa-brands-400.eot": "/just-a-site/static/fonts/fa-brands-400.e8019d50.eot",
+  "/just-a-site/fonts/fa-brands-400.ttf": "/just-a-site/static/fonts/fa-brands-400.fdf44bc4.ttf",
+  "/just-a-site/fonts/fa-brands-400.woff": "/just-a-site/static/fonts/fa-brands-400.da408238.woff",
+  "/just-a-site/fonts/fa-brands-400.woff2": "/just-a-site/static/fonts/fa-brands-400.6814d0e8.woff2",
+  "/just-a-site/fonts/fa-solid-900.eot": "/just-a-site/static/fonts/fa-solid-900.ea363ed4.eot",
+  "/just-a-site/images/fa-brands-400.svg": "/just-a-site/static/images/fa-brands-400.83e6c29f.svg",
+  "/just-a-site/fonts/fa-solid-900.ttf": "/just-a-site/static/fonts/fa-solid-900.132e9759.ttf",
+  "/just-a-site/fonts/fa-solid-900.woff": "/just-a-site/static/fonts/fa-solid-900.2d0415fa.woff",
+  "/just-a-site/fonts/fa-solid-900.woff2": "/just-a-site/static/fonts/fa-solid-900.b75b4bfe.woff2"
 }

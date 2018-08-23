@@ -8,6 +8,7 @@ $theme-colors: (
         light: #ecf0f1,
         dark: #7f8c8d
 );
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts/";
 $enable-shadows: true;
 $font-size-base: 1.1rem;
 $font-size-lg: 1.3rem;
@@ -15,7 +16,9 @@ $font-size-sm: 1rem;
 $navbar-padding-y: 1.2rem;
 
 @import '~bootstrap/scss/bootstrap.scss';
-@import '~font-awesome/scss/font-awesome.scss';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
 @import '~ryoko-headers/scss/ryoko.scss';
 @import '~hella-hero/scss/index.scss';
 @import 'page';

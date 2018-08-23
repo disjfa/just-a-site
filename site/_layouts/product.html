@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+<div id="top">
+    {% include menu.html %}
+    <div id="vue-app">
+        <div class="container py-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ '/shop.html' | prepend: site.baseurl }}">Shop</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ page.title }}s</li>
+                </ol>
+            </nav>
+
+            <div class="row">
+                <div class="col-md-7 col-12">
+                    <img src="{{ page.image }}" alt="{{ page.title }}" class="img-thumbnail">
+                </div>
+                <div class="col-md-5 col-12">
+                    <h1>{{ page.title }}</h1>
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+        <div class="bg-light py-3">
+            <div class="container">
+                <h3>Product footer</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque deleniti distinctio, ea hic
+                    illo laborum perferendis placeat porro saepe sapiente sint sit tempora totam voluptatum?
+                    Consequuntur eveniet laborum reprehenderit!
+                </p>
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+</div>
+
+</body>
+</html>

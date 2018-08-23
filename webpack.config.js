@@ -3,7 +3,8 @@ const Encore = require('@symfony/webpack-encore');
 
 Encore
   .setOutputPath('site/static/')
-  .setPublicPath('/static')
+  .setPublicPath('/just-a-site/static')
+  .setManifestKeyPrefix('/just-a-site')
   .cleanupOutputBeforeBuild()
   .addEntry('just-a-site', './js/just-a-site.js')
   .addStyleEntry('layout', './scss/layout.scss')

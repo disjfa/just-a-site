@@ -1,0 +1,90 @@
+---
+layout: page
+title: Shop
+---
+
+<div class="ryoko ryoko-50" id="album"
+     style="background-image: url('https://images.unsplash.com/photo-1472851294608-062f824d29cc?dpr=1&auto=compress,format&fit=crop&w=1400&h=800&q=80&cs=tinysrgb&crop=')">
+    <div class="ryoko-shade ryoko-body py-3">
+        <div class="text-center text-white">
+            <h2>This is a shop page!</h2>
+            <p>
+                Photo by
+                <a href="https://unsplash.com/photos/c9FQyqIECds?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike
+                    Petrucci</a> on
+                <a href="https://unsplash.com/search/photos/shop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% include parts/top.html %}
+
+<div class="container">
+    <h1>Shop</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis, ea, et exercitationem nam natus
+        porro quas quidem saepe sed sint, totam ullam ut veniam veritatis. Amet eum expedita quibusdam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto dolores nisi sapiente voluptatum?
+        Delectus, deleniti dolorem eaque fuga fugit natus necessitatibus nihil optio sint vel vero vitae voluptate
+        voluptatibus.
+    </p>
+</div>
+
+{% include parts/top.html %}
+
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-12">
+                <div class="row">
+                    {% for item in site.products %}
+                        <div class="col-xs-6 col-md-6 col-lg-4">
+                            <div class="product my-2">
+                                <div class="pb-2">
+                                    <img src="{{ item.image }}" alt="" class="img-fluid">
+                                </div>
+                                <h3>{{ item.title }}</h3>
+                                <p>
+                                    Photo by <a href="{{ item.unsplash_link }}">{{ item.unsplash_user }}</a> on
+                                    <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci facere
+                                    praesentium quas totam voluptatum.
+                                </p>
+                                <a href="{{ item.url | prepend: site.baseurl }}" class="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div style="position: sticky; top: 100px;">
+                    <h3>Basket</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet asperiores, blanditiis
+                        doloribus earum enim est facilis hic itaque molestias obcaecati perferendis porro quis
+                        reiciendis repellendus reprehenderit sed, vero voluptas?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include parts/top.html %}
+
+<div class="container">
+    <h1>Information</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti maiores mollitia nam non quibusdam ullam? Commodi dolores doloribus et explicabo laboriosam maiores mollitia neque, quis, quod ratione rem repellat?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aut consequatur mollitia placeat temporibus. Ad autem consequuntur delectus dicta, eaque incidunt molestias mollitia odit quis quo repellat ullam. Id, voluptatibus.
+    </p>
+</div>
+
+{% include parts/top.html %}
